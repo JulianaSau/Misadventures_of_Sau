@@ -1,9 +1,66 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Hello</title>
+    <title>Sau</title>
   </head>
   <body>
-    <p>Hi, there</p>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+    <ul class="nav-bar">
+      <li class="active">Home</li>
+      <li class="hide">Contact</li>
+      <li>About</li>
+    </ul>
+    
+    
+
+
+
+
+<!-- Explanation in JS tab -->
+
+<!-- The two texts -->
+<div id="container">
+  <span id="text1"></span>
+  <span id="text2"></span>
+</div>
+
+<!-- The SVG filter used to create the merging effect -->
+<svg id="filters">
+  <defs>
+    <filter id="threshold">
+      <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+      <feColorMatrix in="SourceGraphic"
+          type="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 255 -140" />
+    </filter>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+    <ul class="share">
+      <li data-text="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      <li data-text="youtube"><i class="fa fa-youtube" aria-hidden="true"></i></li>
+      <li data-text="codepen"><i class="fa fa-codepen" aria-hidden="true"></i></li>
+    </ul>
+  
+</div>
+
+<!-- By Coding Marker -->
+<div class="youtube">
+  <a href="https://www.youtube.com/channel/UCWhI_ybiFj1x9u3I2eSyS9A" target="_blank">by coding marker</a>
+</div>
+    
+
   </body>
 </html>
