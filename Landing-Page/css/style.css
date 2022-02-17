@@ -1,0 +1,204 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+#container {
+	width: 60%;
+	margin: 10px auto;
+	background: #ffffff;
+	overflow: auto;
+}
+
+p {
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 39px;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 22px;
+	margin: 10px 0;
+}	
+
+h4 {
+	font-size: 19px;
+	margin: 10px 0;
+}	
+
+strong{
+	font-weight: bold;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#content-header {
+	border-bottom: #ddd solid 1px;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+.content-footer {
+	border-top: #ddd solid 1px;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+}
+
+header#main-header {
+	border-bottom: 4px solid #4ea0d8;
+}
+
+#logo {
+	margin: auto;
+	display: block;
+}
+
+#main-text {
+	text-align: center;
+	padding: 18px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+#sub-1 {
+	float: left;
+	width: 48%;
+}
+
+#sub-2 {
+	float: right;
+	width: 48%;
+}
+
+.points {
+	margin-bottom: 30px;
+}
+
+.points img {
+	float: left;
+	margin-right: 7px;
+}
+
+.points h4 {
+	padding-top: 20px;
+}
+
+#contact-form {
+	padding: 10px 15px 0px 15px;
+	border: 4px solid #4ea0d8;
+	border-radius: 10px;  
+	-webkit-border-radius: 10px; /*targets chrome and safari*/
+	-moz-border-radius: 10px; /*targets firefox*/
+	-ms-border-radius: 10px; /*targets internet explorer*/
+	-o-border-radius: 10px; /*targets opera mini*/
+
+	overflow: auto;
+	background-color: #f4f4f4;
+}
+
+#contact-form div {
+	margin-bottom: 20px;
+}
+
+#contact-form label {
+	display: inline-block;
+	width: 100px;
+	font-weight: bold;
+}
+
+#contact-form input[type='text'], #contact-form input[type='email']{
+	border: #ccc 1px solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 25px;
+	width: 65%;
+}
+
+#contact-form input[type='submit'] {
+	padding: 12px 17px;
+	color: #fff;
+	background: #fa6e3e;
+	border: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: right;
+	display: block;
+}
+
+#contact-form input[type='submit']:hover {
+	background: #d55427;
+	cursor: pointer;
+}
+
+#contact-form .content-footer p {
+	font-style: italic;
+	text-align: center;
+	color: #666;
+	font-size: 80%;
+}
+
+#testimonials {
+	margin: 40px 0;
+	font-style: italic;
+	color: #666;
+}
+
+#testimonials img {
+	float: left;
+	margin-right: 20px;
+}
+footer#mainfooter {
+	text-align: center;
+	border-top: #ccc solid 1px;
+	margin-top: 5px;
+	color: #aaa;
+}
+
+/* makes the website responsive even in mobile phones.Mostly changes the layout and appearance of the website*/
+@media(max-width:960px) {
+	#container{
+		width: 80%;
+	}
+
+	h1 {
+		font-size: 33px;
+	}
+
+	#sub-1, #sub-2 {
+		float: none;
+		width: 100%;
+	}
+
+	.points li {
+		background: #eee;
+		padding: 8px;
+		margin-bottom: 30px;
+		-webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+		border-radius: 10px;
+	}
+
+	#testimonials img {
+		float: none;
+		margin: auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+@media(max-width:568px) {
+	h1 {
+		font-size: 22px;
+	}
+}
