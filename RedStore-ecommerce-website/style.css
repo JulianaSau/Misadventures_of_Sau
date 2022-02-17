@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;/*centers all the page content*/
+	padding-right: 25px;/*the padding right and leftfrttgf gives equal spacing on both sides of the webpage*/
+	padding-left: 25px;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px; /*padding on all sides*/
+}
+
+nav{
+	flex: 1;
+	text-align: right;/*aligns the menu items to the right of the page*/
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;/*gives space to the right of the menu items*/
+}
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
